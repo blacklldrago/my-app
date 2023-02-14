@@ -34,6 +34,8 @@ import mvp from "./img/MVP.png"
 import crm from "./img/CRM.png"
 import blockchain from "./img/Blockchain.png"
 import message from "./img/Message.png"
+import active from "./img/active.png"
+import passive from "./img/passive.png"
 
 function App() {
   return (
@@ -228,7 +230,7 @@ function App() {
         </div>
       </div>
       <div className={style["container6"]}>
-        <div className="left-man">
+        <div className={style["left-man"]}>
             <img src = {mancomp} alt="comp"/>
         </div>
 

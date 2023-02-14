@@ -10,6 +10,10 @@
 body button{
     cursor: pointer;
 }
+body button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
 .hello{
     color:  red;
 }
@@ -439,8 +443,13 @@ body button{
     color: rgba(60, 60, 60, 0.5);
     margin-top: 30px;
 }
+.allpr:hover{   
+    background-color: #1E959B;
+    color: white;
+    transition: 1s;
+}
 /* ////////////media */
-@media (max-width:850px) {
+@media (max-width:500px) {
 
     .it-made{
         display: flex;
@@ -449,25 +458,30 @@ body button{
     .left-it{
         width: 100%;
     }
+    .left img{
+        margin-left: 120px;
+    }
     .left-it h1{
         text-align: center;
         margin-left: 130px;
         width: 320px;
         margin: auto;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        margin-left: 70px;
     }
     .left-it p{
-        width: 300px;
+        width: 350px;
         margin: auto;
+        margin-left: 70px;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;        
+        font-size: 20px;
+        line-height: 20px;        
         color: #3C3C3C;
     }
     .red-button-new{
         position: relative;
-        top: 500px;
-        left: 190px;
+        top: 570px;
+        left: 100px;
         background: #F05670;
         box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
         border-radius: 20px;
@@ -477,10 +491,6 @@ body button{
     .right-it {
         width: 100%;
         height: 100%;
-    }
-    .bill-board{
-        display: flex;
-        flex-wrap: wrap;
     }
     .plan, .team, .create, .upgrade,  .fr-row, .fr-all, .right{
         display: none;
@@ -501,20 +511,68 @@ body button{
         position: relative;
         bottom: 700px;
     } 
+    .right-greet h1{
+        width: 500px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .right-greet p{
+        margin-left: 100px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .container1 img{
+        width: 600px;
+        margin-left: 200px;
+    }
     .record{
         position: relative;
-        bottom: 100px;
+        bottom: 160px;
+        left: 130px;
+    }
+    .productfit{
+        margin-left: 100px;
+    }
+    .allpr{
+        margin-left: 70px;
+    }
+    .firstD{
+        position: relative;
+        left: 70px;
+    }
+    .container4{
+        display: none;
+    }
+    .left-greet img{
+        width: 500px;
+        margin-top: 50px;
+        margin-left: 100px;
     }
     .allpr{
         position: relative;
         right: 90px;
     }
-    .container4{
-        display: flex;
-        flex-wrap: wrap;
+    .fr-all, #appear{
+        position: relative;
+        left: 60px;
+    }
+
+
+    .left-man img{
+        margin-left: 120px;
     }
     .container7 , .container6, .message{
         display: flex;
         flex-wrap: wrap;
+        margin-left: 50px;
+    }   
+    .copy{
+        margin-top: 100px;
     }
 }
+@media (max-width:1200px) {
+    .companies{
+        display: none;
+    }
+}
+
